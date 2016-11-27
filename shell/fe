@@ -1,0 +1,20 @@
+drwxrwxr-x 4 franklyn franklyn 4096 11月 12 14:40 ..
+-rw-rw-r-- 1 franklyn franklyn 19 11月 12 22:42 parse.awk
+drwxrwxr-x 3 franklyn franklyn 4096 11月 19 00:19 .
+-rwxrw-r-- 1 franklyn franklyn 185 11月 19 00:19 redirect.sh
+-rwxrw-r-- 1 franklyn franklyn 500 11月 13 13:58 awk_if
+total 28
+prwxrw-r-- 1 franklyn franklyn 0 11月 19 00:16 ls_output
+-rw-rw-r-- 1 franklyn franklyn 0 11月 19 00:19 fe
+drwxrwxr-x 3 franklyn franklyn 4096 11月 19 00:19 .
+drwxrwxr-x 2 franklyn franklyn 4096 11月 15 22:19 lab_dir
+-rwxrw-r-- 1 franklyn franklyn 388 11月 15 22:38 rm_do
+prwxrw-r-- 1 franklyn franklyn 0 11月 19 00:16 ls_output
+-rw-rw-r-- 1 franklyn franklyn 0 11月 19 00:19 fe
+-rw-rw-r-- 1 franklyn franklyn 19 11月 12 22:42 parse.awk
+-rwxrw-r-- 1 franklyn franklyn 500 11月 13 13:58 awk_if
+drwxrwxr-x 4 franklyn franklyn 4096 11月 12 14:40 ..
+drwxrwxr-x 2 franklyn franklyn 4096 11月 15 22:19 lab_dir
+total 28
+-rwxrw-r-- 1 franklyn franklyn 388 11月 15 22:38 rm_do
+-rwxrw-r-- 1 franklyn franklyn 185 11月 19 00:19 redirect.sh

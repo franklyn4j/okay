@@ -1,0 +1,27 @@
+#!/bin/bash
+
+function parse_ls_ {
+    #ls $1 -l | grep -v total | awk /^d.+/'{print $9}' | while read line
+	#do 
+	#	echo "$2>$line"
+	#	parse_ls_ $1"/"$line "--"$2
+	#done
+
+	ls $1 -l | grep -v total | awk '{print substr($1,1,1)$9}' | while read line
+    do
+		filetype=${line:0:1}
+		filename=${line:1}
+		if [ $filetype == "d" ]
+		then
+			echo $2">"$filename
+			parse_ls_ $1"/"$filename "--"$2
+		else
+			echo $2$filename
+		fi
+	done	
+}
+function parse_ls {
+    echo $1
+    parse_ls_ $1  "--"
+}
+parse_ls $1

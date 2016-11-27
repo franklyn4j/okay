@@ -1,0 +1,24 @@
+function! Foo ()
+python << EOF
+import vim
+class foo_demo:
+	def show(self):
+		buf = vim.current.buffer
+		i = 0
+		length = len(buf)
+		while (i < length):
+			if (buf[i][0:3] == "###"):
+				del buf[i]
+     		i += 1
+
+#		for line in vim.current.buffer:
+#			if (line[0:3] == "###"):
+#				print line	
+		#w = vim.current.window.cursor
+#		print "Lines {0}".format(len(vim.current.buffer))
+#		print vim.current.buffer[-1]
+#		print vim.current.line
+x = foo_demo()
+x.show()
+EOF
+endfunction

@@ -1,0 +1,26 @@
+function rm_do {
+   arg_r=""
+   arg_pass=""
+   arg_undefined=""
+   while getopts "rfinvRIvd" arg
+   do
+	   case $arg in
+	   r|R) arg_r="r";;
+	   f|i|v) arg_pass=$arg_pass$arg;;
+	   *) arg_undefined=$arg_undefined$arg;;
+	   esac
+  done
+
+   echo $arg_pass
+   echo $arg_r
+   echo $arg_undefined
+
+echo $OPTIND
+shift $[$OPTIND -1]
+   for para in "$@" 
+   do
+	   echo $para
+   done
+
+}
+rm_do $1
