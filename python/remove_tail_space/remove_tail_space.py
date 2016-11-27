@@ -1,8 +1,10 @@
 import shutil
 import datetime
 import os
+
 index=1
 bk_path="/tmp"
+
 def do_remove_line(line):
 	if len(line) > 1:
 		count = 0
@@ -13,6 +15,7 @@ def do_remove_line(line):
 		return line[0:-1-count]+line[-1]
 	else:
 		return line
+
 def do_backup(meat,src_file,dest_path):
 	now = datetime.datetime.now()	
 	str_now = now.strftime("%H%M%S")+"_"+str(index)
@@ -69,6 +72,7 @@ def remove(files):
 		file_meta.close()
 	else:
 		print "buckup dir does not exist:  "+bk_path
+
 def remove_tail_space():
 	file = os.path.abspath("data")
 	remove((file,))
