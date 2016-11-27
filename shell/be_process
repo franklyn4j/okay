@@ -1,0 +1,10 @@
+flag=1
+while [ $flag -eq 1 ] 
+do
+read line <fee
+echo $line
+if [ "$line" == "end_of_fifo" ]
+then
+exit
+fi
+done
