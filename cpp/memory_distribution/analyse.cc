@@ -23,7 +23,7 @@ int main(int argc,char ** argv){
 		++count;
 		map<long,long>::iterator it = data.find(addr);
 		if(it == data.end()){
-			data.insert(make_pair(addr,0));
+			data.insert(make_pair(addr,1));
 		}else{
 			++it->second;
 		}
